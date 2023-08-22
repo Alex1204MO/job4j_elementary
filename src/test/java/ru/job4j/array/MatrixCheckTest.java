@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class MatrixCheckTest {
-    private MatrixChek MatrixCheck;
 
     @Test
     public void whenHasMonoHorizontal() {
