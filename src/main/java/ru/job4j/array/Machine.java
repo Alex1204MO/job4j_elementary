@@ -5,12 +5,14 @@ import java.util.Arrays;
 public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1}, rsl = new int[100];
-        int size = 0, odd_money = money - price;
-        for (int coin : coins)
-            while (odd_money >= coin) {
+        int size = 0, oddMoney = money - price;
+        for (int coin : coins) {
+            while (oddMoney >= coin) {
                 rsl[size++] = coin;
-                odd_money -= coin;
+                oddMoney -= coin;
             }
+        }
         return Arrays.copyOf(rsl, size);
     }
 }
+
