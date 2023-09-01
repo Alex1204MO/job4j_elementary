@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
-
 public class FitTest {
     @Test
     void whenMan180Then92() {
