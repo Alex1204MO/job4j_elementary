@@ -9,16 +9,16 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
+    public static double divideAndminus(double first, double second) {
+        return divide(first, second)
+                + minus(first, second);
+    }
+
     public static double divideAndminusAndMultiplyAndsum(double first, double second) {
         return divide(first, second)
                 + minus(first, second)
                 + multiply(first, second)
                 + sum(first, second);
-    }
-
-    public static double divideAndminus(double first, double second) {
-        return divide(first, second)
-                + minus(first, second);
     }
 
     public static void main(String[] args) {
